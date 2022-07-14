@@ -1,0 +1,422 @@
+.container {
+  padding: 0 2rem;
+}
+
+.title {
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  color: #223867;
+}
+
+.description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  color: #223867;
+}
+
+.two_columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin-bottom: 90px;
+
+}
+
+.column_title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #028CA6;
+
+}
+
+.main {
+  margin: 0 auto;
+  width: 1264px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(224, 247, 252, 0.583333) 25.87%, #CAF2FA 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 300px;
+}
+
+.photo_women {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-image: url('../public/women.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo_baby {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-image: url('../public/baby.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conteiner_for_text {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  max-width: 538px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #068CA6;
+  box-shadow: 0px 4px 4px rgba(6, 140, 166, 0.31);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.conteiner_for_text:last-child {
+  margin-bottom: 0;
+}
+
+.info_text {
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+  color: #223867;
+}
+
+.description_bottom {
+  margin: 0;
+  margin-left: 45px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2A477D;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 270px;
+}
+
+.span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #068CA6;
+}
+
+.circle {
+  background-image: url(../public/womenBig.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 315px;
+  height: 315px;
+  z-index: 1;
+  border-radius: 100%;
+}
+
+.background {
+  width: 315px;
+  height: 315px;
+  position: relative;
+  z-index: 1;
+}
+
+.circle::before {
+  border-radius: 100%;
+  content: '';
+  display: block;
+  position: relative;
+  width: 315px;
+  height: 315px;
+  z-index: 3;
+  background: white;
+  /* background: red; */
+  opacity: 0.4;
+}
+
+.image_text {
+  z-index: 100;
+  display: inline;
+  position: absolute;
+  margin-top: 70%;
+  margin-left: calc(50% - 70px);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #068CA6;
+}
+
+.skolioz {
+  background-image: url(../public/skolioz.png);
+  position: absolute;
+  bottom: 360px;
+  left: calc(50% - 55px);
+  margin: 0;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+}
+
+.skolioz:hover {
+  cursor: pointer;
+}
+
+.skolioz_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #223867;
+  position: absolute;
+  top: -50px;
+  left: 20px;
+
+}
+
+.arms {
+  background-image: url(../public/arms.png);
+  position: absolute;
+  top: -70px;
+  left: calc(50% + 150px);
+  margin: 0;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+}
+
+.arms:hover {
+  cursor: pointer;
+}
+
+.arms_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #223867;
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  width: 240px;
+  text-align: start;
+}
+
+.throat {
+  background-image: url(../public/throat.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 100px;
+  left: calc(50% + 210px);
+  margin: 0;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+}
+
+.throat:hover {
+  cursor: pointer;
+}
+
+.throat_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  width: 240px;
+  text-align: start;
+  z-index: 100;
+}
+
+.lungs {
+  background-image: url(../public/lungs.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 260px;
+  left: calc(50% + 155px);
+  margin: 0;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+}
+
+.lungs:hover {
+  cursor: pointer;
+}
+
+.lungs_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+  position: absolute;
+  top: -5px;
+  left: 150px;
+  width: 240px;
+  text-align: start;
+  z-index: 100;
+}
+
+.legs {
+  background-image: url(../public/legs.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 370px;
+  left: calc(50% - 50px);
+  margin: 0;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+}
+
+.legs:hover {
+  cursor: pointer;
+}
+
+.legs_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+  position: absolute;
+  top: 120px;
+  left: -55px;
+  width: 240px;
+  text-align: center;
+  z-index: 100;
+}
+
+.knee {
+  background-image: url(../public/knee.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 260px;
+  left: calc(50% - 275px);
+  margin: 0;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+}
+
+.knee:hover {
+  cursor: pointer;
+}
+
+.knee_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+  position: absolute;
+  top: -5px;
+  left: -200px;
+  width: 160px;
+  text-align: right;
+  z-index: 100;
+}
+
+.hip {
+  background-image: url(../public/hip.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 325px);
+  margin: 0;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+}
+
+.hip:hover {
+  cursor: pointer;
+}
+
+.hip_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+  position: absolute;
+  top: 10px;
+  left: -200px;
+  width: 160px;
+  text-align: right;
+  z-index: 100;
+}
+
+.fatigue {
+  background-image: url(../public/fatigue.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -60px;
+  left: calc(50% - 255px);
+  margin: 0;
+  width: 115px;
+  height: 115px;
+  z-index: 1;
+}
+
+.fatigue:hover {
+  cursor: pointer;
+}
+
+.fatigue_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #223867;
+  position: absolute;
+  top: 10px;
+  left: -200px;
+  width: 160px;
+  text-align: right;
+  z-index: 100;
+}
+
+.cross {
+  top: -23px;
+  left: -25px;
+  position: relative;
+  margin: 0;
+  z-index: 3;
+}
